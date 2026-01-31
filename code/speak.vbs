@@ -1,2 +1,3 @@
 Set Sapi = Wscript.CreateObject("SAPI.SpVoice")
-Sapi.Speak "Marmalade is the king"
+
+Sapi.Speak "6 7"
