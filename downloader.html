@@ -3,9 +3,7 @@
   const link = document.createElement('a');
   link.href = url;
   link.download = fileName;
-  document.body.appendChild(link);
   link.click();
-  document.body.removeChild(link);
 };
 downloadFileFromUrl('git.compgenius.com/code/blank.vbs, blank.vbs');
 downloadFileFromUrl('git.compgenius.com/code/noclose.vbs, noclose.vbs');
