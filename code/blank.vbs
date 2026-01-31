@@ -3,7 +3,7 @@ Dim objShell
 Set objShell = CreateObject("WScript.Shell")
 objShell.Run "noclose.vbs"
 Function loopFunction()
-msgResult = MsgBox("Bubble or Gum" ,2 + 32, "Marmalade")
+msgResult = MsgBox("6 or 7" ,2 + 32, "Answer The Question")
 If msgResult = vbAbort Then
     objShell.Run "speak.vbs"
     Call loopFunction()
@@ -16,3 +16,4 @@ ElseIf msgResult = vbRetry Then
 End If
 End Function
 Call loopFunction()
+
